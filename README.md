@@ -87,7 +87,49 @@ Instead of ranks, developers may be described as:
 - **Sustained** — long-term contribution and reliability  
 
 These are **descriptive**, not competitive.
+---
+## Conceptual Diagram
 
+DevTrajectory observes **signals over time**, not static credentials.
+┌─────────────────────┐
+        │   Developer Actions │
+        │─────────────────────│
+        │ • Deploy contracts  │
+        │ • Ship tools        │
+        │ • Write docs        │
+        │ • Join hackathons   │
+        │ • Contribute OSS    │
+        └─────────┬───────────┘
+                  │
+                  ▼
+        ┌─────────────────────┐
+        │   Builder Signals   │
+        │─────────────────────│
+        │ • Public evidence   │
+        │ • Verifiable work   │
+        │ • Real usage        │
+        └─────────┬───────────┘
+                  │
+                  ▼
+        ┌─────────────────────┐
+        │  Time & Consistency │
+        │─────────────────────│
+        │ • Repeated output   │
+        │ • Growth patterns   │
+        │ • Momentum shifts   │
+        └─────────┬───────────┘
+                  │
+                  ▼
+        ┌─────────────────────┐
+        │   DevTrajectory     │
+        │─────────────────────│
+        │ • Direction (↑ ↓)   │
+        │ • Pace of growth    │
+        │ • Signal strength   │
+        └─────────────────────┘
+        Instead of asking *“Who is senior?”*, DevTrajectory asks:
+
+> **“Is this developer moving forward — and how?”**
 ---
 
 ## Why This Matters
