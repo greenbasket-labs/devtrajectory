@@ -10,15 +10,18 @@
 <body>
   <main class="container">
 
+    <!-- HERO -->
     <section class="hero">
       <h1>DevTrajectory</h1>
       <p class="tagline">
-        Making developer growth visible through real builder signals.
+        GitHub shows code. LinkedIn shows claims.  
+        DevTrajectory shows movement.
       </p>
     </section>
 
+    <!-- INPUT -->
     <section class="input-section">
-      <h2>Add Builder Signals</h2>
+      <h2>Add Builder Signals (Demo)</h2>
 
       <label>
         Developer Name
@@ -26,60 +29,102 @@
       </label>
 
       <label>
-        Year Active Since
+        Active Since (Year)
         <input type="number" id="startYear" placeholder="e.g. 2023" />
       </label>
 
       <label>
-        Projects / Signals (one per line)
+        Builder Signals (one per line)
         <textarea id="signals" placeholder="Deployed smart contract
 Open-source contribution
-Hackathon submission"></textarea>
+Hackathon submission
+Real users onboarded"></textarea>
       </label>
 
-      <button onclick="generateTrajectory()">Generate Trajectory</button>
+      <button onclick="generateTrajectory()">Generate Snapshot</button>
     </section>
 
+    <!-- OUTPUT -->
     <section class="output-section">
       <h2>Trajectory Snapshot</h2>
       <div id="output" class="card hidden"></div>
     </section>
-<!-- TRAJECTORY MOCK -->
-<section class="trajectory-section">
-  <h2>Trajectory (Mock)</h2>
-  <p>
-    This visual represents developer activity over time.
-    It shows movement, not rank.
-  </p>
 
-  <div class="trajectory">
-    <div class="line"></div>
+    <!-- MOVEMENT VISUAL -->
+    <section class="trajectory-section">
+      <h2>Developer Movement (Concept)</h2>
+      <p>
+        This chart represents <strong>impact over time</strong>.  
+        No ranks. No scores. Just movement.
+      </p>
 
-    <div class="point start">
-      <span>Start</span>
-    </div>
+      <pre class="ascii-chart">
+Impact
+  ^
+  |                ●  Sustained impact
+  |            ●
+  |        ●
+  |    ●
+  | ●  First ship
+  +------------------------------> Time
+     2021   2022   2023   2024
+      </pre>
 
-    <div class="point build">
-      <span>First Ship</span>
-    </div>
+      <p class="note">
+        A junior developer with one real project can show stronger movement
+        than a senior developer with years of inactivity.
+      </p>
+    </section>
 
-    <div class="point users">
-      <span>Real Users</span>
-    </div>
+    <!-- MOCK SCENARIOS -->
+    <section class="trajectory-section">
+      <h2>Example Trajectories</h2>
 
-    <div class="point gap">
-      <span>Break</span>
-    </div>
+      <pre class="ascii-chart">
+Scenario A — Consistent Builder
+Impact
+  ^
+  |        ●
+  |      ●
+  |    ●
+  |  ●
+  |●
+  +------------------------------> Time
+      </pre>
 
-    <div class="point return">
-      <span>Return</span>
-    </div>
-  </div>
-      </section>
+      <pre class="ascii-chart">
+Scenario B — Early Spike, Long Gap
+Impact
+  ^
+  |      ●
+  |      ●
+  |  ●
+  | ●
+  |●
+  +------------------------------> Time
+      </pre>
+
+      <pre class="ascii-chart">
+Scenario C — Late Breakthrough
+Impact
+  ^
+  |            ●
+  |          ●
+  |        ●
+  |  ●
+  |●
+  +------------------------------> Time
+      </pre>
+    </section>
+
+    <!-- DISCLAIMER -->
     <footer class="disclaimer">
       <p>
-        DevTrajectory is a research project.  
-        It does not rank developers or make hiring decisions.
+        DevTrajectory is a research and visualization project.
+        It does not rank developers, assign scores, or make hiring decisions.
+      </p>
+      <p>
+        All examples shown are illustrative.
       </p>
     </footer>
 
