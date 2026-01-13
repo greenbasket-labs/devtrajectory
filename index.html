@@ -14,8 +14,8 @@
     <section class="hero">
       <h1>DevTrajectory</h1>
       <p class="tagline">
-        GitHub shows code. LinkedIn shows claims.  
-        DevTrajectory shows movement.
+        GitHub shows code. LinkedIn shows claims.<br />
+        <strong>DevTrajectory shows movement.</strong>
       </p>
     </section>
 
@@ -40,17 +40,19 @@ Open-source contribution
 Hackathon submission
 Real users onboarded"></textarea>
       </label>
-<label>
-  View Timeframe
-  <select>
-    <option>All time</option>
-    <option>Last year</option>
-    <option>Last 6 months</option>
-    <option>Last 3 months</option>
-    <option>Last month</option>
-    <option>Last week</option>
-  </select>
-</label>
+
+      <label>
+        View Timeframe
+        <select id="timeframe">
+          <option>All time</option>
+          <option>Last year</option>
+          <option>Last 6 months</option>
+          <option>Last 3 months</option>
+          <option>Last month</option>
+          <option>Last week</option>
+        </select>
+      </label>
+
       <button onclick="generateTrajectory()">Generate Snapshot</button>
     </section>
 
@@ -60,11 +62,11 @@ Real users onboarded"></textarea>
       <div id="output" class="card hidden"></div>
     </section>
 
-    <!-- MOVEMENT VISUAL -->
+    <!-- MOVEMENT CONCEPT -->
     <section class="trajectory-section">
       <h2>Developer Movement (Concept)</h2>
       <p>
-        This chart represents <strong>impact over time</strong>.  
+        This visual represents <strong>impact over time</strong>.
         No ranks. No scores. Just movement.
       </p>
 
@@ -86,7 +88,7 @@ Impact
       </p>
     </section>
 
-    <!-- MOCK SCENARIOS -->
+    <!-- EXAMPLE TRAJECTORIES -->
     <section class="trajectory-section">
       <h2>Example Trajectories</h2>
 
