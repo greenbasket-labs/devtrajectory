@@ -1,4 +1,3 @@
-
 function generateTrajectory() {
   const name = document.getElementById("devName").value || "Anonymous Builder";
   const year = document.getElementById("startYear").value || "Unknown";
@@ -22,5 +21,9 @@ function generateTrajectory() {
     </ul>
   `;
 
+  // Show snapshot
   output.classList.remove("hidden");
+
+  // 🔥 SHOW MOVEMENT VISUALS
+  document.getElementById("movementBlock").classList.remove("hidden");
 }
